@@ -127,8 +127,8 @@ const onSubmit = async () => {
   const cuisines = selectedCuisines.value.length ? selectedCuisines.value.join(',') : '沒特別要求'
   const moods = selectedMoods.value.length ? selectedMoods.value.join(',') : '沒特別'
   const prompt = `推薦我一個用餐時候的料理選擇，我的預算是${ selectedBudget.value }價位，我可以選的料理類型是${ cuisines }，我的心情是${ moods }，用繁體中文回答我`
-  const url = new URL(`${ API_URI }/text/${ encodeURIComponent(prompt) }`)
-  const response = await fetch(url.toString())
+  const url = `${ API_URI }/text/${ encodeURIComponent(prompt) }`
+  const response = await fetch(url)
     .catch(error => {
       console.error('Error:', error)
       result.value = '發生錯誤，請稍後再試'

@@ -1,9 +1,9 @@
 {
-  "name": "vue-tailwind-template",
+  "name": "what-to-eat",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/connectshark/vue-tailwind-template"
+    "url": "https://github.com/connectshark/what-to-eat"
   },
   "license": "MIT",
   "version": "0.1.0",

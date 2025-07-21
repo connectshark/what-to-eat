@@ -1,49 +1,57 @@
-# what-to-eat
-[![build status](https://github.com/connectshark/what-to-eat/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/connectshark/what-to-eat/actions/workflows/deploy.yml)
-[![create-release](https://github.com/connectshark/what-to-eat/actions/workflows/create-release.yml/badge.svg?branch=main)](https://github.com/connectshark/what-to-eat/actions/workflows/create-release.yml)
-[![GitHub last commit](https://img.shields.io/github/last-commit/connectshark/what-to-eat.svg?style=flat)](https://github.com/connectshark/what-to-eat)
-![GitHub stars](https://img.shields.io/github/stars/connectshark/what-to-eat.svg?style=social&label=Stars&style=plastic)
+# What To Eat
 
+[![GitHub release](https://img.shields.io/github/v/release/connectshark/what-to-eat?display_name=tag&sort=semver)](https://github.com/connectshark/what-to-eat/releases/latest)
+[![Contributors](https://img.shields.io/github/contributors/connectshark/what-to-eat)](https://github.com/connectshark/what-to-eat/graphs/contributors)
+[![Last Commit](https://img.shields.io/github/last-commit/connectshark/what-to-eat)](https://github.com/connectshark/what-to-eat/commits/main)
+[![Pull Requests](https://img.shields.io/github/issues-pr/connectshark/what-to-eat)](https://github.com/connectshark/what-to-eat/pulls)
+[![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square)](./CODE_OF_CONDUCT.md)
+[![LICENSE](https://img.shields.io/github/license/connectshark/what-to-eat)](./LICENSE)
 
-![https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
-![https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
-![https://img.shields.io/badge/tailwindcss-35495E?style=for-the-badge&logo=tailwindcss&logoColor=38BCF8](https://img.shields.io/badge/tailwindcss-35495E?style=for-the-badge&logo=tailwindcss&logoColor=38BCF8)
+「今天吃什麼？」是一個終極難題，此專案旨在解決這個問題，幫助使用者快速找到想吃的餐廳。
 
-快速開發模板架構
+## ✨ 功能
 
-## 目錄
+*   **餐廳探索**：根據使用者設定的條件（例如地點、菜系、價位），隨機推薦餐廳。
+*   **餐廳資訊**：提供餐廳的詳細資訊，包括地址、電話、營業時間和評論。
+*   **收藏清單**：使用者可以將喜歡的餐廳加入收藏，方便日後查看。
 
-- [專案已安裝內容](#專案已安裝內容)
-- [使用模板的優勢](#使用模板的優勢)
-  - [CSS主色設定](#css主色設定)
-  - [自動部署至gh-page](#自動部署至gh-page)
-  - [資料結構為主的路由](#資料結構為主的路由)
-- [版權](#版權)
-## 專案已安裝內容
+## 🚀 技術堆疊
 
-- vite `5`
-- vue `3`
-- pinia
-- vue-router
-- tailwindcss `4`
-- github action自動部署至 `gh-page`
+*   **前端**：
+    *   [Vue 3](https://vuejs.org/)
+    *   [Vite](https://vitejs.dev/)
+    *   [Vue Router](https://router.vuejs.org/)
+    *   [Pinia](https://pinia.vuejs.org/)
+    *   [Tailwind CSS](https://tailwindcss.com/)
 
-## 使用模板的優勢
+## 🛠️ 安裝與啟動
 
-### CSS主色設定
+1.  **複製專案**
 
-使用TailwindCSS官方建議方式設定好CSS變數，可一次調整專案色票。
+    ```bash
+    git clone https://github.com/connectshark/what-to-eat.git
+    ```
 
-`src/index.css`
+2.  **進入專案目錄**
 
-### 自動部署至gh-page
+    ```bash
+    cd what-to-eat
+    ```
 
-已設定github action功能，在推送新的內容時會觸發部署功能。
+3.  **安裝相依套件**
 
-### 資料結構為主的路由
+    ```bash
+    npm install
+    ```
 
-將`vue-router`搭配插件修改成以**資料結構**為主的路由設定，所有路由都放置在`src/pages`的資料夾中，預設找不到頁面會進入`[...slug].vue`的頁面。
+4.  **啟動開發伺服器**
 
-## 版權
+    ```bash
+    npm run dev
+    ```
 
-[MIT](/LICENSE).
+    應用程式將在 `http://localhost:5173` 上運行。
+
+## 📄 授權
+
+此專案採用 [MIT License](./LICENSE) 授權。

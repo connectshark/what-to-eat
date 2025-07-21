@@ -6,7 +6,6 @@
     <div class="w-11/12 container mx-auto flex items-center justify-between py-4">
       <router-link to="/" class="text-2xl font-bold text-gray-900">What To Eat</router-link>
       <nav class="space-x-2">
-        <router-link to="/" class="text-gray-600 hover:text-blue-600 transition-colors">首頁</router-link>
         <router-link to="/discover" class="text-gray-600 hover:text-blue-600 transition-colors">開始探索</router-link>
         <router-link to="/about" class="text-gray-600 hover:text-blue-600 transition-colors">關於我們</router-link>
       </nav>

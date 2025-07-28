@@ -11,16 +11,13 @@
               <h3 class="text-lg font-medium text-gray-900 mb-4">您的預算？</h3>
               <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div v-for="option in budgetOptions" :key="option.id">
-                  <label class="flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-100">
-                    <input required type="radio" name="budget" :value="option.value" v-model="selectedBudget" class="sr-only peer">
-                    <span class="peer-checked:hidden">
-                      <i class='bx bx-sm bx-radio-circle'></i> 
-                    </span>
-                    <span class="peer-checked:inline hidden">
-                      <i class='bx bx-sm bx-radio-circle-marked'></i> 
-                    </span>
-                    <span class="font-medium text-gray-700">
-                      <i v-for="star in option.label" :key="star" class='bx bx-sm bx-dollar'></i> 
+                  <label class="flex items-center p-3 border rounded-lg cursor-pointer"
+                    :class="selectedBudget === option.value
+                      ? 'bg-blue-600 text-white border-transparent'
+                      : 'border-gray-200 hover:bg-gray-100'">
+                    <input required type="radio" name="budget" :value="option.value" v-model="selectedBudget" class="sr-only">
+                    <span class="font-medium">
+                      <i v-for="star in option.label" :key="star" class='bx bx-sm bx-dollar'></i>
                     </span>
                   </label>
                 </div>
@@ -31,15 +28,12 @@
               <h3 class="text-lg font-medium text-gray-900 mb-4">想吃什麼類型？</h3>
               <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div v-for="option in cuisineOptions" :key="option.id">
-                  <label class="flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-100">
-                    <input type="checkbox" name="cuisines" :value="option.value" v-model="selectedCuisines" class="sr-only peer">
-                    <span class="peer-checked:hidden">
-                      <i class='bx bx-sm bx-square-rounded'></i>
-                    </span>
-                    <span class="peer-checked:inline hidden">
-                      <i class='bx bx-sm bx-check-square'  ></i> 
-                    </span>
-                    <span class="ml-3 text-sm font-medium text-gray-700">{{ option.label }}</span>
+                  <label class="flex items-center p-3 border rounded-lg cursor-pointer"
+                    :class="selectedCuisines.includes(option.value)
+                      ? 'bg-blue-600 text-white border-transparent'
+                      : 'border-gray-200 hover:bg-gray-100'">
+                    <input type="checkbox" name="cuisines" :value="option.value" v-model="selectedCuisines" class="sr-only">
+                    <span class="text-sm font-medium">{{ option.label }}</span>
                   </label>
                 </div>
               </div>
@@ -49,15 +43,12 @@
               <h3 class="text-lg font-medium text-gray-900 mb-4">今天心情如何？</h3>
               <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div v-for="option in moodOptions" :key="option.id">
-                  <label class="flex items-center p-3 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-100">
-                    <input type="checkbox" name="moods" :value="option.value" v-model="selectedMoods" class="sr-only peer">
-                    <span class="peer-checked:hidden">
-                      <i class='bx bx-sm bx-square-rounded'></i>
-                    </span>
-                    <span class="peer-checked:inline hidden">
-                      <i class='bx bx-sm bx-check-square'  ></i> 
-                    </span>
-                    <span class="ml-3 text-sm font-medium text-gray-700">{{ option.label }}</span>
+                  <label class="flex items-center p-3 border rounded-lg cursor-pointer"
+                    :class="selectedMoods.includes(option.value)
+                      ? 'bg-blue-600 text-white border-transparent'
+                      : 'border-gray-200 hover:bg-gray-100'">
+                    <input type="checkbox" name="moods" :value="option.value" v-model="selectedMoods" class="sr-only">
+                    <span class="text-sm font-medium">{{ option.label }}</span>
                   </label>
                 </div>
               </div>

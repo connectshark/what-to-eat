@@ -12,10 +12,9 @@
               <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div v-for="option in budgetOptions" :key="option.id">
                   <label class="flex items-center p-3 border rounded-lg cursor-pointer"
-                         :class="{
-                           'bg-blue-600 text-white border-transparent': selectedBudget === option.value,
-                           'border-gray-200 hover:bg-gray-100': selectedBudget !== option.value
-                         }">
+                    :class="selectedBudget === option.value
+                      ? 'bg-blue-600 text-white border-transparent'
+                      : 'border-gray-200 hover:bg-gray-100'">
                     <input required type="radio" name="budget" :value="option.value" v-model="selectedBudget" class="sr-only">
                     <span class="font-medium">
                       <i v-for="star in option.label" :key="star" class='bx bx-sm bx-dollar'></i>
@@ -30,10 +29,9 @@
               <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div v-for="option in cuisineOptions" :key="option.id">
                   <label class="flex items-center p-3 border rounded-lg cursor-pointer"
-                         :class="{
-                           'bg-blue-600 text-white border-transparent': selectedCuisines.includes(option.value),
-                           'border-gray-200 hover:bg-gray-100': !selectedCuisines.includes(option.value)
-                         }">
+                    :class="selectedCuisines.includes(option.value)
+                      ? 'bg-blue-600 text-white border-transparent'
+                      : 'border-gray-200 hover:bg-gray-100'">
                     <input type="checkbox" name="cuisines" :value="option.value" v-model="selectedCuisines" class="sr-only">
                     <span class="text-sm font-medium">{{ option.label }}</span>
                   </label>
@@ -46,10 +44,9 @@
               <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div v-for="option in moodOptions" :key="option.id">
                   <label class="flex items-center p-3 border rounded-lg cursor-pointer"
-                         :class="{
-                           'bg-blue-600 text-white border-transparent': selectedMoods.includes(option.value),
-                           'border-gray-200 hover:bg-gray-100': !selectedMoods.includes(option.value)
-                         }">
+                    :class="selectedMoods.includes(option.value)
+                      ? 'bg-blue-600 text-white border-transparent'
+                      : 'border-gray-200 hover:bg-gray-100'">
                     <input type="checkbox" name="moods" :value="option.value" v-model="selectedMoods" class="sr-only">
                     <span class="text-sm font-medium">{{ option.label }}</span>
                   </label>

@@ -10,7 +10,8 @@
   --font-title: ChenYuluoyan, system-ui, Arial, Helvetica, 'Courier New', Courier, monospace;
   --font-pearl: FakePearl, system-ui, Arial, Helvetica, 'Courier New', Courier, monospace;
 
-  --color-primary: var(--primary);
+  --color-primary: #ff9671;
+  --color-primary-dark: #b98572;
 }
 
 @font-face {

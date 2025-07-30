@@ -9,7 +9,7 @@
         <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
           讓「What To Eat」終結您的選擇困難。透過智慧 AI 和簡單選項，立即獲得最適合您的用餐建議。
         </p>
-        <router-link to="/discover" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105">
+        <router-link to="/discover" class="bg-primary text-white font-bold py-3 px-8 rounded-full hover:bg-primary-dark transition duration-300 ease-in-out transform hover:scale-105">
           立即尋找美食
         </router-link>
       </div>
@@ -52,17 +52,17 @@
           </h2>
           <div class="flex flex-col md:flex-row justify-around items-center text-center gap-8">
             <div class="flex flex-col items-center">
-              <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">1</div>
+              <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">1</div>
               <h3 class="text-xl font-semibold text-gray-900 mb-2">告訴我們您的偏好</h3>
               <p class="text-gray-600 max-w-xs">選擇您的預算、口味、想吃的料理類型。</p>
             </div>
             <div class="flex flex-col items-center">
-              <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">2</div>
+              <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">2</div>
               <h3 class="text-xl font-semibold text-gray-900 mb-2">獲得 AI 即時建議</h3>
               <p class="text-gray-600 max-w-xs">我們的系統會立刻為您生成數個餐點選項。</p>
             </div>
             <div class="flex flex-col items-center">
-              <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">3</div>
+              <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">3</div>
               <h3 class="text-xl font-semibold text-gray-900 mb-2">享受您的美味時光</h3>
               <p class="text-gray-600 max-w-xs">不再猶豫，立即前往或訂購您的下一餐。</p>
             </div>

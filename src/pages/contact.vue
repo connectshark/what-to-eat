@@ -13,18 +13,18 @@
           <div class="mt-12">
             <h2 class="text-2xl font-bold text-gray-900">電子郵件</h2>
             <p>對於一般問題與支持，請寄信至：</p>
-            <a href="mailto:hello@whatoeat.com" class="text-blue-600 hover:text-blue-800">hello@whatoeat.com</a>
+            <a href="mailto:hello@whatoeat.com" class="text-primary hover:text-primary-dark">hello@whatoeat.com</a>
           </div>
 
           <div class="mt-12">
             <h2 class="text-2xl font-bold text-gray-900">社群媒體</h2>
             <p>您也可以在社群平台上找到我們：</p>
             <p class="space-x-4">
-                <a href="#" class="text-blue-600 hover:text-blue-800">Twitter</a>
+                <a href="#" class="text-primary hover:text-primary-dark">Twitter</a>
                 <span>/</span>
-                <a href="#" class="text-blue-600 hover:text-blue-800">Facebook</a>
+                <a href="#" class="text-primary hover:text-primary-dark">Facebook</a>
                 <span>/</span>
-                <a href="#" class="text-blue-600 hover:text-blue-800">Instagram</a>
+                <a href="#" class="text-primary hover:text-primary-dark">Instagram</a>
             </p>
           </div>
 

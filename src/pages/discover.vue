@@ -13,7 +13,7 @@
                 <div v-for="option in budgetOptions" :key="option.id">
                   <label class="flex items-center p-3 border rounded-lg cursor-pointer"
                     :class="selectedBudget === option.value
-                      ? 'bg-blue-600 text-white border-transparent'
+                      ? 'bg-primary text-white border-transparent'
                       : 'border-gray-200 hover:bg-gray-100'">
                     <input required type="radio" name="budget" :value="option.value" v-model="selectedBudget" class="sr-only">
                     <span class="font-medium">
@@ -30,7 +30,7 @@
                 <div v-for="option in cuisineOptions" :key="option.id">
                   <label class="flex items-center p-3 border rounded-lg cursor-pointer"
                     :class="selectedCuisines.includes(option.value)
-                      ? 'bg-blue-600 text-white border-transparent'
+                      ? 'bg-primary text-white border-transparent'
                       : 'border-gray-200 hover:bg-gray-100'">
                     <input type="checkbox" name="cuisines" :value="option.value" v-model="selectedCuisines" class="sr-only">
                     <span class="text-sm font-medium">{{ option.label }}</span>
@@ -45,7 +45,7 @@
                 <div v-for="option in moodOptions" :key="option.id">
                   <label class="flex items-center p-3 border rounded-lg cursor-pointer"
                     :class="selectedMoods.includes(option.value)
-                      ? 'bg-blue-600 text-white border-transparent'
+                      ? 'bg-primary text-white border-transparent'
                       : 'border-gray-200 hover:bg-gray-100'">
                     <input type="checkbox" name="moods" :value="option.value" v-model="selectedMoods" class="sr-only">
                     <span class="text-sm font-medium">{{ option.label }}</span>
@@ -56,7 +56,7 @@
           </div>
 
           <div class="text-center mt-10">
-            <button :disabled="loading" type="submit" class="bg-blue-600 cursor-pointer text-white font-bold py-3 px-10 rounded-full hover:bg-blue-700 transition duration-300 transform hover:scale-105 disabled:bg-gray-500 disabled:cursor-not-allowed">
+            <button :disabled="loading" type="submit" class="bg-primary cursor-pointer text-white font-bold py-3 px-10 rounded-full hover:bg-primary-dark transition duration-300 transform hover:scale-105 disabled:bg-gray-500 disabled:cursor-not-allowed">
               開始搜尋
             </button>
           </div>

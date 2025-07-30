@@ -1,11 +1,14 @@
 # What To Eat
 
+
 [![GitHub release](https://img.shields.io/github/v/release/connectshark/what-to-eat?display_name=tag&sort=semver)](https://github.com/connectshark/what-to-eat/releases/latest)
 [![Contributors](https://img.shields.io/github/contributors/connectshark/what-to-eat)](https://github.com/connectshark/what-to-eat/graphs/contributors)
 [![Last Commit](https://img.shields.io/github/last-commit/connectshark/what-to-eat)](https://github.com/connectshark/what-to-eat/commits/main)
 [![Pull Requests](https://img.shields.io/github/issues-pr/connectshark/what-to-eat)](https://github.com/connectshark/what-to-eat/pulls)
 [![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square)](./CODE_OF_CONDUCT.md)
 [![LICENSE](https://img.shields.io/github/license/connectshark/what-to-eat)](./LICENSE)
+
+![](/readme/cover.png)
 
 「今天吃什麼？」是一個終極難題，此專案旨在解決這個問題，幫助使用者快速找到想吃的餐廳。
 
